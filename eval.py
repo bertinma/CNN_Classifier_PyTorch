@@ -8,7 +8,7 @@ from torch.nn import CrossEntropyLoss
 from torchsummary import summary
 
 from utils import load_dataset
-from classifier import Classifier
+from model.classifier import Classifier
 
 torch.autograd.set_detect_anomaly(True)
 
