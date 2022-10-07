@@ -10,8 +10,6 @@ from torchsummary import summary
 from utils import load_dataset
 from model.classifier import Classifier
 
-torch.autograd.set_detect_anomaly(True)
-
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--batch-size", type=int, default=1)
