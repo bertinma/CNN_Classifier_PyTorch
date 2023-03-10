@@ -3,7 +3,7 @@ from torch import nn
 class Classifier(nn.Module):
 	def __init__(self, input_dim, num_classes):
 		super().__init__()
-		self.conv1 = nn.Conv2d(1, 8, kernel_size=(3, 3), stride=1,  padding = 'valid')
+		self.conv1 = nn.Conv2d(1, 8, kernel_size=(3, 3), stride=1)
 		self.act = nn.ReLU()
 		self.drop = nn.Dropout(p=0.2)
 		self.pool1 = nn.MaxPool2d(kernel_size=(2, 2))
